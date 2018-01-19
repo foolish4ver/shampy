@@ -1,0 +1,101 @@
+form
+{
+	width:auto;
+	height:auto;
+	margin:0px 0px 0px 69px;
+}
+form>*
+{
+	margin:1px;
+	border:none;
+}
+.form_result
+{
+	font-family:'AbelRegular';
+	font-size:16px;
+	line-height:20px;
+	margin:15px 0px 0px 0px;
+}
+.form_result *
+{
+	display:none;
+}
+.form_error
+{
+	margin:0px;
+	border:solid 1px red;
+	background-color:#FFE8E8;
+}
+.input_form
+{
+	width:240px;
+	height:36px;
+	font-family:'AbelRegular';
+	font-size:21px;
+	background-color:white;
+	margin-bottom:10px;
+	padding-left:10px;
+}
+.select_form
+{
+	width:250px;
+	height:36px;
+	font-family:'AbelRegular';
+	font-size:21px;
+	background-color:white;
+	margin-bottom:10px;
+	padding-left:5px;
+}
+span.customStyleSelectBox
+{
+	width:240px;
+	height:36px;
+	color:#000;
+	font-family:'AbelRegular';
+	font-size:21px;
+	background-color:white;
+	padding-left:10px;
+	padding-top:5px;
+}
+span.customStyleSelectBox.changed
+{
+	width:240px;
+	height:36px;
+	color:#000;
+	font-family:'AbelRegular';
+	font-size:21px;
+	background-color:white;
+	padding-top:5px;
+}
+/* on the next line we add a down arrow on the right to indicate that it is a select box */
+.customStyleSelectBoxInner
+{
+	width:240px;
+	height:29px;
+	color:#000;
+	font-family:'AbelRegular';
+	font-size:21px;
+	background-color:white;
+	background:url(../img/ui/bg_select.gif) no-repeat right -2px;
+	padding-top:5px;
+}
+.button_form
+{
+	width:69px;
+	height:21px;
+	background-color:#adadad;
+	font-family:'AbelRegular';
+	font-size:16px;
+	padding:3px 0px 0px 0px;
+}
+.area_form
+{
+	width:230px;
+	height:150px;
+	color:#000;
+	font-family:'AbelRegular';
+	font-size:21px;
+	background-color:#fff;
+	margin-bottom:10px;
+	padding:10px;
+}

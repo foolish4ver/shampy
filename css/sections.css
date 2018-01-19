@@ -1,0 +1,822 @@
+body>article
+{
+	/*position:relative;*/
+	/*position:absolute;
+	top:58px;
+	bottom:22px;*/
+}
+/***********************************************************************
+ * BODY SECTIONS
+ **********************************************************************/
+body>section
+{
+	min-width:1024px;
+	position:fixed;
+	top:58px;
+	bottom:22px;
+	left:0px;
+	right:0px;
+	display:block;
+	color:white;
+	overflow-x:hidden;
+	background: url(../img/fotos/p3.jpg) 
+	/*no-repeat center center fixed; */
+}
+.hidden
+{
+	display:none !important;	/* comprobar video */
+}
+.invisible
+{
+	visibility:hidden !important;
+}
+.ontop
+{
+	overflow:auto;
+	overflow-x:hidden;
+}
+.slide
+{
+	-webkit-transition: left 0.5s ease-in-out;
+	-moz-transition: left 0.5s ease-in-out;
+	-ms-transition: left 0.5s ease-in-out;
+	-o-transition: left 0.5s ease-in-out;
+	transition: left 0.5s ease-in-out;
+}
+.slideout
+{
+	-webkit-transition: left 0.5s ease-in-out;
+	-moz-transition: left 0.5s ease-in-out;
+	-ms-transition: left 0.5s ease-in-out;
+	-o-transition: left 0.5s ease-in-out;
+	transition: left 0.5s ease-in-out;
+}
+.delayed
+{
+	-webkit-transition-delay:0.2s;
+	-moz-transition-delay:0.2s;
+	-ms-transition-delay:0.2s;
+	-o-transition-delay:0.2s;
+	transition-delay: 0.2s;
+}
+.delayedout
+{
+	-webkit-transition-delay:0.15s;
+	-moz-transition-delay:0.15s;
+	-ms-transition-delay:0.15s;
+	-o-transition-delay:0.15s;
+	transition-delay: 0.15s;
+}
+.ontop>*
+{
+	position:relative;
+}
+#sec_aniversary
+{
+	background-color:black;
+}
+#sec_aniversary>article
+{
+	display:block;
+}
+#sec_video, #sec_makingof
+{
+	background-color:black;
+	overflow:hidden;
+}
+#sec_video div, #sec_makingof div
+{
+	height:100%;
+	z-index:1;
+	cursor:pointer;
+}
+
+#sec_video img, #sec_makingof img
+{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 100px;
+   height: 100px;
+   margin-top: -50px;
+   margin-left: -50px;
+   cursor:pointer;
+}
+
+#sec_video video, #sec_makingof video
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+}
+#sec_video object, #sec_makingof object
+{
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	margin-top:-240px;
+	margin-left:-426px;
+}
+#sec_prensa
+{
+	background:url(../img/fondos/prensa.jpg) 50% 0% no-repeat fixed;
+}
+#sec_novedades
+{
+	background:url(../img/fondos/novedades.jpg) 50% 0% no-repeat fixed;
+}
+#sec_comprar
+{
+	background:url(../img/fondos/comprar.jpg) 50% 0% no-repeat fixed;
+}
+#sec_business
+{
+	background:url(../img/fondos/business.jpg) 50% 0% no-repeat fixed;
+}
+#sec_descargas
+{
+	background:url(../img/fondos/descargas.jpg) 50% 0% no-repeat fixed;
+}
+#sec_contacta
+{
+	background:url(../img/fondos/contacta.jpg) 50% 0% no-repeat fixed;
+}
+#sec_aviso
+{
+	background:url(../img/fondos/comprar.jpg) 50% 0% no-repeat fixed;
+}
+#sec_creditos
+{
+	background:url(../img/fondos/prensa.jpg) 50% 0% no-repeat fixed;
+}
+/* BUTTONS **********************************************************************/
+.buttons_container
+{
+	margin:0px 0px 0px 70px;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.buttons_container *
+{
+	margin-right:6px;
+	display:inline-block;
+}
+.left_button
+{
+	width:45px;
+	height:45px;
+	background:url(../img/ui/btn_izq.png) 0px 0px no-repeat;
+	cursor:pointer;
+}
+.left_button:hover
+{
+	background-position: -45px;
+}
+.right_button
+{
+	width:45px;
+	height:45px;
+	background:url(../img/ui/btn_der.png) -45px 0px no-repeat;
+	cursor:pointer;
+}
+.right_button:hover
+{
+	background-position: 0px;
+}
+.counter
+{
+	width:auto;
+	height:auto;
+	float:left;
+	
+	font-family:'AbelRegular';
+	color:#848482;
+	font-size:24px;
+	line-height:1em;
+	margin:0px !important;
+}
+/* COLUMNAS *********************************************************************/
+.columns
+{
+	margin:0px 0px 0px 70px;
+	display:inline-block;
+	min-width:1060px;
+}
+.columns .left
+{
+	margin:0px 30px 0px 0px;
+	width:320px;
+	float:left;
+}
+.columns .right
+{
+	margin: 0px 0px 0px 20px;
+	width:320px;
+	float:left;
+}
+/* DOWNLOAD *********************************************************************/
+#sec_descargas>article
+{
+	min-width:1024px;
+}
+#sec_descargas .columns .left
+{
+	width:690px;
+}
+#sec_descargas .columns .right
+{
+	width:auto;
+}
+#sec_descargas a:link, #sec_descargas a:link,
+#sec_descargas a:visited, #sec_descargas a:visited,
+#sec_descargas a:active, #sec_descargas a:active
+{
+	text-decoration:none;
+}
+#container_wallpapers
+{
+	margin:0px 0px 0px 70px;
+	width: 800px;
+}
+#container_wallpapers>li, #container_presspack>li
+{
+	float:left;
+	display:inline;
+}
+.wallpaper
+{
+	width: 205px;
+	overflow:hidden;
+	margin-right:30px;
+}
+.wallpaper img, .presspack img
+{
+	cursor:pointer;
+	position:relative;
+}
+#container_wallpapers>li>a
+{
+	clear:both;
+	cursor:pointer;
+	visibility:hidden;
+	font-family:'AbelRegular';
+	color:white;
+	font-size:24px;
+	line-height:20px;
+	position:relative;
+	top:-12px;
+	padding-top:140px;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50); /* This works in IE 8 & 9 too ... but also 5, 6, 7 */
+	-moz-opacity:0.5; /* Older than Firefox 0.9 */
+	-khtml-opacity: 0.5; /* Safari 1.x (pre WebKit!) */
+	opacity: 0.5; /* Modern! Firefox 0.9+, Safari 2?, Chrome any? Opera 9+, IE 9+ */
+}
+#container_presspack>li>a
+{
+	clear:both;
+	cursor:pointer;
+	visibility:hidden;
+	font-family:'AbelRegular';
+	color:white;
+	font-size:24px;
+	line-height:20px;
+	position:relative;
+	top:-12px;
+	padding-top:190px;
+	padding-right: 105px;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50); /* This works in IE 8 & 9 too ... but also 5, 6, 7 */
+	-moz-opacity:0.5; /* Older than Firefox 0.9 */
+	-khtml-opacity: 0.5; /* Safari 1.x (pre WebKit!) */
+	opacity: 0.5; /* Modern! Firefox 0.9+, Safari 2?, Chrome any? Opera 9+, IE 9+ */
+}
+#container_wallpapers>li>a:hover, #container_presspack>li>a:hover
+{
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100); /* This works in IE 8 & 9 too ... but also 5, 6, 7 */
+	-moz-opacity:1.0; /* Older than Firefox 0.9 */
+	-khtml-opacity: 1.0; /* Safari 1.x (pre WebKit!) */
+	opacity: 1.0; /* Modern! Firefox 0.9+, Safari 2?, Chrome any? Opera 9+, IE 9+ */
+}
+#container_presspack
+{
+	position:relative;
+	left:35px;
+}
+.presspack
+{
+	width:137px;
+	overflow:hidden;
+}
+#container_wallpapers .left, #container_presspack .left
+{
+	left:-10px;
+}
+#container_wallpapers .right, #container_presspack .right
+{
+	right:-10px;
+}
+/* DONDE COMPRAR *************************************************************/
+#sec_comprar .texto_page
+{
+	width:270px;
+	min-width:270px;
+}
+/* CONTACTA ******************************************************************/
+/*
+#sec_contacta .columns
+{
+	margin:0px 0px 0px 70px;
+	max-width:700px;
+	display:inline-block;
+}
+*/
+/*
+#sec_contacta .columns .column
+{
+	width: 350px;
+	margin:0px;
+	padding:0px;
+}
+*/
+#sec_contacta .columns .left
+{
+	width:250px;
+	min-width:250px;
+}
+/* CREDITOS *********************************************************************/
+#sec_creditos section
+{
+	margin-left:70px;
+	font-family:'AbelRegular';
+	color:#fff;
+}
+#sec_creditos a
+{
+	display:inline-block;
+	color:#fff;
+	font-size:16px;
+	line-height:20px;
+}
+#sec_creditos br
+{
+	line-height:2;
+}
+/*
+#sec_creditos a:link, #sec_creditos a:link,
+#sec_creditos a:visited, #sec_creditos a:visited,
+#sec_creditos a:active, #sec_creditos a:active
+{
+	text-decoration:none;
+}
+#sec_creditos a:hover
+{
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50); 
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+*/
+a:link, a:link,
+a:visited, a:visited,
+a:active, a:active
+{
+	text-decoration:none;
+}
+a:hover
+{
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+
+#sec_creditos h2
+{
+	font-size:24px;
+	line-height:20px;
+	margin-bottom:6px;
+}
+
+/* SECTION PANE IMAGES ------------------------------------------------------------------------------------------------ */
+#pane_wrapper
+{
+	position:fixed;
+	top:58px;
+	bottom:22px;
+	height:100%;
+	width:100%;
+	display:none;
+}
+#outer_container
+{
+	position:relative;
+	margin:auto;
+	height:100%;
+	width:100%;
+	background:url(../img/ui/background_pan.png) repeat;
+	z-index:1;
+}
+#imagePan
+{
+	position:relative;
+	overflow:hidden;
+	cursor:pointer;
+	height:100%;
+	width:100%;
+}
+#imagePan #pan_container
+{
+	position:relative;
+	left:0px;
+	width:100%;
+	height:100%;
+}
+#pan_container img
+{
+	-webkit-box-shadow: 0px 0px 80px rgba(0,0,0,1.0);
+	-moz-box-shadow: 0px 0px 80px rgba(0,0,0,1.0);
+	-o-box-shadow: 0px 0px 80px rgba(0,0,0,1.0);
+	box-shadow: 0px 0px 80px rgba(0,0,0,1.0);
+}
+#preload
+{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-66px;
+	margin-top:-150px;	
+	width:120px;
+	height:120px;
+	background:url(../img/ui/ajax-loader.gif) center center no-repeat;
+	background-color:#000;
+}
+#outer_container #close
+{
+	position:fixed;
+	font-family:'AbelRegular';
+	color:white;
+	font-size:16px;
+	line-height:1em;
+	margin:0px !important;
+	padding: 0px 5px 0px 5px;
+	z-index:1;
+	/*text-shadow: black 0px 0px 2px;
+	background-color:transparent;*/
+	background-color:grey;
+}
+/* CSS TEXTOS ----------------------------------------------------------------------------------------- */
+body>section h1,h2
+{
+	font-family:'AbelRegular';
+	font-weight:normal;
+	color:white;
+}
+body>section h1
+{
+	font-size:40px;
+	margin-top:48px;
+	margin-left:70px; 
+	min-width:350px;
+	text-transform:uppercase;
+}
+.texto_page
+{
+	font-family:'AbelRegular';
+	font-size:16px;
+	line-height:20px;
+	margin:0px 0px 0px 70px;
+	min-width:350px;
+}
+/*
+a.texto_page_link:link, a.texto_page_link:active, a.texto_page_link:visited
+{
+	font-family:'AbelRegular';
+	font-size:16px;
+	line-height:20px;
+	text-decoration:none;
+	color:white;
+}
+a.texto_page_link:hover
+{
+	text-decoration:underline;
+}
+*/
+.subtitular_page
+{
+	font-family:'AbelRegular';
+	color:#fff;
+	font-size:24px;
+	/*line-height:20px;*/
+	line-height:1em;
+	margin:0px 0px 0px 70px;
+	/*min-width:355px;*/
+}
+.separador
+{
+	clear:both;
+	width:100%;
+	height:1px;
+	margin-top:15px;
+	margin-bottom:15px;
+	position:relative;
+}
+.separador>*
+{
+	height:1px;
+	background-color:white;
+	position:absolute;
+}
+.separador_left
+{
+	width:44px;
+	left:0px;
+}
+.separador_right
+{
+	width:11px;
+	right:0px;
+}
+/*----------------------------------------------------------------------------------------------------- */
+/* SECTION NOVEDADES -------------------------------------------------------------------------------------------------------------*/
+.content_container
+{
+	position:relative;
+	left:0px;
+	width:999999em;
+	-webkit-transition: left 0.45s ease-in-out;
+	-moz-transition: left 0.45s ease-in-out;
+	-ms-transition: left 0.45s ease-in-out;
+	-o-transition: left 0.45s ease-in-out;
+	transition: left 0.45s ease-in-out;
+}
+.content_container>li
+{
+	float:left;
+	display:inline;
+	margin:0px;
+	padding:0px;
+	padding-right:20px;
+}
+.content_container>li img
+{
+	width:270px;
+	height:195px;
+	/*float:right;*/
+	margin-left:30px;
+}
+#sec_novedades .content_container>li
+{
+	width:655px;
+	height:225px;
+}
+#sec_novedades .columns .left
+{
+	width:355px;
+	height:2em;
+}
+#news_container
+{
+	width:655px;
+	height:250px;
+	margin:0px 0px 0px 70px;
+	overflow:hidden;
+}
+.texto_noticia
+{
+	width:355px;
+	height:242px;
+	font-family:'AbelRegular';
+	color:#fff;
+	font-size:16px;
+	line-height:20px;
+	float:left;
+	position:relative;
+	display:block;
+	z-index:1000;
+	overflow:auto;
+}
+.texto_noticia a
+{
+	color:white;
+	text-decoration:underline;
+}
+.texto_page_link:link,
+.texto_page_link:active,
+.texto_page_link:visited
+{
+	color:white;
+}
+.texto_noticia .customScrollBox{position:relative; height:100%; overflow:hidden;}
+/*.texto_noticia .customScrollBox .container{position:relative; width:289px; top:0; float:left;}*/
+.texto_noticia .customScrollBox .container{position:relative; width:320px; top:0; float:left;}
+.texto_noticia .customScrollBox .content{clear:both;}
+.texto_noticia .dragger_container
+{
+	position:relative;
+	width:0px;
+	height:100%;
+	float:left;
+	margin:0px 0px 0px 30px;
+	border-left:1px solid #6f6b6a;
+}
+.texto_noticia .dragger
+{
+	position:absolute;
+	width:7px;
+	height:40px;
+	background:#98877d;
+	margin-left:-4px;
+	overflow:hidden;
+	cursor:pointer;
+	-moz-border-radius:6px;
+	-khtml-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+.texto_noticia .dragger_pressed{position:absolute; width:7px; height:60px; background:#98877d; margin-left:-4px; overflow:hidden; cursor:pointer; -moz-border-radius:6px; -khtml-border-radius:6px; -webkit-border-radius:6px; border-radius:6px;}
+/* END SECTION NOVEDADES ---------------------------------------------------------------------------------------------------------*/
+/* SECTION DO YOUR BUSINESS -------------------------------------------------------------------------------------------------------------*/
+/*
+#sec_business .counter
+{
+	margin:25px 0px 0px 20px;
+}
+*/
+#sec_business .subtitular_page
+{
+	min-width:438px;
+}
+#sec_business .content_container>li
+{
+	width:400px;
+}
+#contacts_container
+{
+	width:400px;
+	min-width:400px;
+	height:275px;
+	margin:0px 0px 0px 70px;
+	overflow:hidden;
+	float:left;
+}
+#contacts_texto
+{
+	width:320px;
+	height:auto;
+	margin:0px 0px 0px 70px;
+	float:left;
+	font-family:'AbelRegular';
+	color:#fff;
+	font-size:16px;
+	line-height:20px;
+}
+.lista_paises_ul{margin:0;float:left;min-width:180px;width:180px;}
+.lista_paises_li{list-style:none;display:block;min-width:100px;height:auto;font-family:'AbelRegular';color:#fff;font-size:16px;line-height:25px;}
+.lista_mails_ul{margin:0;margin-left:10px;float:right;}
+.lista_mails_li{list-style:none;display:block;height:auto;font-family:'AbelRegular';color:#fff;font-size:16px;line-height:25px;margin-left:10px;/*text-align:right;*/}
+/* END SECTION DO YOUR BUSINESS ---------------------------------------------------------------------------------------------------------*/
+/* COMUNES */
+.photos_container
+{
+	width:1250px;
+	height:auto;
+	margin:auto;
+}
+.photos_left{width:50%;height:auto;float:left;text-align:right;direction:rtl;display:block;}
+.photos_right{width:auto;height:auto;float:left;text-align:left;margin-left:6px;}
+.photos_left li, .photos_right li{margin-bottom:3px;overflow:hidden;}
+.photos_left>li{direction:ltr;}
+.photos_right>li{direction:rtl;}
+.photo_link{cursor:pointer;}
+/* ----------------------------------------------------- */
+/* ANYOS */
+#sec_aniversary>article>section
+{
+	z-index:0;
+	padding: 0px;
+	margin: 0px;
+	width:100%;
+	max-width: 1920px;
+	min-width:1090px;
+	position: relative;
+	border-top: 1px solid rgba(255,255,255,0.3);
+	border-bottom: 1px solid rgba(0,0,0,0.4);
+	-webkit-box-shadow: 0px 0px 50px rgba(0,0,0,0.8);
+	-moz-box-shadow: 0px 0px 50px rgba(0,0,0,0.8);
+	-o-box-shadow: 0px 0px 50px rgba(0,0,0,0.8);
+	box-shadow: 0px 0px 50px rgba(0,0,0,0.8);
+	overflow:hidden;
+}
+/* AÃ‘O 2012 */
+#first
+{
+	/*background: url(../img/fotos/p3.jpg) 50% -200px no-repeat fixed;*/
+	height: 1650px;
+	position:relative;
+}
+
+#first .logo_aniversario { height: 140px; width: 808px; max-width: 1920px; position: absolute; z-index:4; top:290px;left:50%; margin-left:-365px;}
+#first .img_dcha_color { height: 188px; width: 267px; max-width: 1920px; position: absolute;z-index:3; top:230px;right:50%;margin-right:-500px;}
+#first .img_izq_chica{ height: 148px;width: 212px; max-width: 1920px; position: absolute;z-index:6; top:390px;left:50%;margin-left:-430px;}
+#first .frase_2012{ height: 146px;width: 631px; max-width: 1920px; position: absolute;z-index:4; top:890px;left:50%;margin-left:-260px;}
+#first .toro_2012{ height: 328px;width: 276px; max-width: 1920px; position: absolute;z-index:5; top:1140px;left:50%;margin-left:-100px;}
+#first .img_dcha_bn{ height: 261px;width: 216px; max-width: 1920px; position: absolute;z-index:6; top:1290px;right:50%;margin-right:-485px;}
+#first .img_izq_chica_2{ height: 169px;width: 244px; max-width: 1920px; position: absolute;z-index:3; top:1390px;left:50%;margin-left:-505px;}
+#first>article { width: 100%; top: 5px; position: absolute; z-index:2;}
+#first>article p,
+#first>article a { color: #ccc; }
+#first>article a { text-decoration: underline; }
+#first>article a:hover { color: #fff; }
+/* ----------------------------------------------------- */
+
+/* AÃ‘O 2008 */
+#second .logo_loveislois { height: 133px; width: 688px; max-width: 1920px; position: absolute; z-index:4; top:950px;left:50%; margin-left:-344px;}
+#second .img_chica_grande { height: 849px; width: 795px; max-width: 1920px; position: absolute;z-index:5; top:1450px;right:-150px;}
+#second .img_izq_chica1{ height: 165px;width: 226px; max-width: 1920px; position: absolute;z-index:5; top:1500px;left:50%;margin-left:-460px;}
+#second .img_izq_chica2{ height: 192px;width: 238px; max-width: 1920px; position: absolute;z-index:4; top:1900px;left:50%;margin-left:30px;}
+#second .chapa_negra{ height: 112px;width: 112px; max-width: 1920px; position: absolute;z-index:2; top:1350px;left:50%;margin-left:-480px;}
+#second .chapa_roja{ height: 112px;width: 112px; max-width: 1920px; position: absolute;z-index:2; top:1450px;left:50%;margin-left:-400px;}
+#second .chapa_naranja{ height: 154px;width: 154px; max-width: 1920px; position: absolute;z-index:2; top:1390px;right:50%;margin-right:-77px;}
+#second
+{
+	/*background: url(../img/fotos/p1.jpg) 50% -200px no-repeat fixed;*/
+	height: 1650px;
+	z-index:5;
+	position:relative;
+}
+#second>article { width: 100%;position:absolute;top:10px;z-index:0;}
+/* ----------------------------------------------------- */
+
+/* AÃ‘O 1997 */
+#third .different { height: 222px; width: 700px; max-width: 1920px; position: absolute; z-index:4; top:1400px;left:50%; margin-left:-380px;}
+#third .torso { height: 533px; width: 658px; max-width: 1920px; position: absolute;z-index:5; top:900px;right:-150px;}
+#third .img_izq{ height: 267px;width: 340px; max-width: 1920px; position: absolute;z-index:6; top:3300px;left:50%;margin-left:-500px;}
+#third .logo_lois{ height: 185px;width: 265px; max-width: 1920px; position: absolute;z-index:4; top:1900px;left:50%;margin-left:120px;}
+#third .img_dcha{ height: 254px;width: 194px; max-width: 1920px; position: absolute;z-index:4; top:2100px;left:50%;margin-left:-450px;}
+#third
+{
+	/*background: url(../img/fotos/p2.jpg) 50% -200px no-repeat fixed;*/
+	height: 730px;
+	z-index:5;
+	position:relative;
+}
+#third>article {width: 100%;position:absolute;top:10px;z-index:0;}
+#third .photograph { background: url(../images/photo.png) transparent 40% 100px no-repeat fixed; min-height: 800px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
+/* ----------------------------------------------------- */
+/* AÃ‘O 1988 */
+/*#fourth .logo_loquemoda { height: 98px; width: 389px; max-width: 1920px; position: absolute; z-index:2; top:1800px;left:50%; margin-left:-190px;}
+#fourth .img_mono { height: 1146px; width: 815px; max-width: 1920px; position: absolute;z-index:5; top:4450px;right:-310px;}
+#fourth .logo_rosa_lois{ height: 135px;width: 193px; max-width: 1920px; position: absolute;z-index:3; top:2250px;left:50%;margin-left:150px;}
+#fourth .img_izq_hombre{ height: 191px;width: 264px; max-width: 1920px; position: absolute;z-index:4; top:2400px;left:50%;margin-left:-350px;}*/
+#fourth .logo_triangulo_lois{ height: 574px;width: 194px; max-width: 1920px; position: absolute;z-index:2; top:0px;left:50%;margin-left:-287px;}
+#fourth .avion1{ height: 117px;width: 177px; max-width: 1920px; position: absolute;z-index:2; top:3000px;left:50%;margin-left:-400px;}
+#fourth .avion2{ height: 161px;width: 191px; max-width: 1920px; position: absolute;z-index:2; top:2300px;left:50%;margin-left:200px;}
+#fourth
+{
+	/*background: url(../img/fotos/1988/loisjeans_1988_fondo.jpg) 50% 0px no-repeat fixed;*/
+	height: 700px;
+	z-index:1;
+	position:relative;
+}
+#fourth>article {width: 100%;position:absolute;top:0px;z-index:0;}
+/* ----------------------------------------------------- */
+/* AÃ‘O 1979 */
+#fifth .logo_lois_yellow { height: 105px; width: 185px; max-width: 1920px; position: absolute; z-index:2; top:1870px;left:50%;margin-left:-90px;}
+#fifth .happy { height: 207px; width: 604px; max-width: 1920px; position: absolute;z-index:3; top:3400px;left:50%;margin-left:-55px;}
+#fifth .flor_roja { height: 205px;width: 203px; max-width: 1920px; position: absolute;z-index:2; top:2150px;left:50%;margin-left:150px;}
+#fifth .logo_paz { height: 169px;width: 168px; max-width: 1920px; position: absolute;z-index:2; top:2100px;left:50%;margin-left:300px;}
+#fifth .flor_blanca { height: 141px;width: 141px; max-width: 1920px; position: absolute;z-index:4; top:2300px;left:50%;margin-left:370px;}
+#fifth .abba{ height: 143px;width: 332px; max-width: 1920px; position: absolute;z-index:2; top:3000px;left:50%;margin-left:-250px;}
+#fifth .raqueta { height: 404px;width: 660px; max-width: 1920px; position: absolute;z-index:4; top:6100px;left:50%;margin-left:-115px;}
+#fifth .foto { height: 189px;width: 192px; max-width: 1920px; position: absolute;z-index:2; top:3000px;left:50%;margin-left:-400px;}
+#fifth
+{
+	background: url(../img/fotos/1979/loisjeans_1979_fondo.jpg) 50% -200px no-repeat fixed;
+	height: 1200px;
+	position:relative;
+}
+#fifth>article {width: 100%;position:absolute;top:0px;z-index:0;}
+/* ----------------------------------------------------- */
+/* AÃ‘O 1968 */
+#sixth .logo_krony { height: 138px; width: 283px; max-width: 1920px; position: absolute; z-index:2; top:2050px;left:50%;margin-left:-400px;}
+#sixth .vaquero { height: 1242px; width: 525px; max-width: 1920px; position: absolute;z-index:3; top:6400px;right:-150px;}
+#sixth .img_izq_pareja { height: 226px;width: 286px; max-width: 1920px; position: absolute;z-index:2; top:4250px;left:50%;margin-left:-495px;}
+#sixth .logo_lois { height: 163px;width: 311px; max-width: 1920px; position: absolute;z-index:2; top:2900px;left:50%;margin-left:-150px;}
+#sixth .img_derecha { height: 198px;width: 267px; max-width: 1920px; position: absolute;z-index:2; top:3250px;left:50%;margin-left:210px;}
+#sixth
+{
+	background: url(../img/fotos/1968/loisjeans_1968_fondo.jpg) 50% 0px no-repeat fixed;
+	height: 1520px;
+	position:relative;
+}
+#sixth>article {width: 100%;position:absolute;top:0px;z-index:0;}
+/* ----------------------------------------------------- */
